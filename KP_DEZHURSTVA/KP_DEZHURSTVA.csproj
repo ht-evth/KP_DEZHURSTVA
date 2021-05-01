@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BC3BBA9-4BDF-43C5-A391-0CF6108F0C7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KP_DEZHURSTVA</RootNamespace>
+    <AssemblyName>KP_DEZHURSTVA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GroupAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupAddForm.Designer.cs">
+      <DependentUpon>GroupAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupFindForm.Designer.cs">
+      <DependentUpon>GroupFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidayFindForm.Designer.cs">
+      <DependentUpon>HolidayFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersoneAboutFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersoneAboutFrom.Designer.cs">
+      <DependentUpon>PersoneAboutFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoForm.Designer.cs">
+      <DependentUpon>infoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersoneAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersoneAddForm.Designer.cs">
+      <DependentUpon>PersoneAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersoneFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersoneFindForm.Designer.cs">
+      <DependentUpon>PersoneFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GroupAddForm.resx">
+      <DependentUpon>GroupAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupFindForm.resx">
+      <DependentUpon>GroupFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidayFindForm.resx">
+      <DependentUpon>HolidayFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersoneAboutFrom.resx">
+      <DependentUpon>PersoneAboutFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoForm.resx">
+      <DependentUpon>infoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersoneAddForm.resx">
+      <DependentUpon>PersoneAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersoneFindForm.resx">
+      <DependentUpon>PersoneFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
