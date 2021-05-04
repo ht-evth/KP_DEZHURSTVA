@@ -306,7 +306,6 @@ namespace KP_DEZHURSTVA
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "infoForm";
             this.Text = "График дежурств - Краткая информация";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.infoForm_FormClosed);
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
