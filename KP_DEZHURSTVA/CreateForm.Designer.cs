@@ -53,12 +53,14 @@ namespace KP_DEZHURSTVA
             this.radioButton_day_might = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton_holidays_all = new System.Windows.Forms.RadioButton();
+            this.radioButton_holidays_gos = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton_individ = new System.Windows.Forms.RadioButton();
+            this.radioButton_group = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,7 +92,6 @@ namespace KP_DEZHURSTVA
             this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -315,8 +316,8 @@ namespace KP_DEZHURSTVA
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.radioButton_holidays_all);
+            this.groupBox2.Controls.Add(this.radioButton_holidays_gos);
             this.groupBox2.Location = new System.Drawing.Point(761, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(240, 100);
@@ -324,32 +325,32 @@ namespace KP_DEZHURSTVA
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Выходные";
             // 
-            // radioButton1
+            // radioButton_holidays_all
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 28);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 28);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Все";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_holidays_all.AutoSize = true;
+            this.radioButton_holidays_all.Checked = true;
+            this.radioButton_holidays_all.Location = new System.Drawing.Point(15, 28);
+            this.radioButton_holidays_all.Name = "radioButton_holidays_all";
+            this.radioButton_holidays_all.Size = new System.Drawing.Size(61, 28);
+            this.radioButton_holidays_all.TabIndex = 7;
+            this.radioButton_holidays_all.TabStop = true;
+            this.radioButton_holidays_all.Text = "Все";
+            this.radioButton_holidays_all.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_holidays_gos
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(190, 28);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.Text = "Государственные";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_holidays_gos.AutoSize = true;
+            this.radioButton_holidays_gos.Location = new System.Drawing.Point(15, 62);
+            this.radioButton_holidays_gos.Name = "radioButton_holidays_gos";
+            this.radioButton_holidays_gos.Size = new System.Drawing.Size(190, 28);
+            this.radioButton_holidays_gos.TabIndex = 8;
+            this.radioButton_holidays_gos.Text = "Государственные";
+            this.radioButton_holidays_gos.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton4);
+            this.groupBox3.Controls.Add(this.radioButton_individ);
+            this.groupBox3.Controls.Add(this.radioButton_group);
             this.groupBox3.Location = new System.Drawing.Point(288, 29);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(221, 100);
@@ -357,27 +358,27 @@ namespace KP_DEZHURSTVA
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Тип графика";
             // 
-            // radioButton3
+            // radioButton_individ
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(21, 28);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(184, 28);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Индивидуальный";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_individ.AutoSize = true;
+            this.radioButton_individ.Checked = true;
+            this.radioButton_individ.Location = new System.Drawing.Point(21, 28);
+            this.radioButton_individ.Name = "radioButton_individ";
+            this.radioButton_individ.Size = new System.Drawing.Size(184, 28);
+            this.radioButton_individ.TabIndex = 5;
+            this.radioButton_individ.TabStop = true;
+            this.radioButton_individ.Text = "Индивидуальный";
+            this.radioButton_individ.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButton_group
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(21, 62);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(131, 28);
-            this.radioButton4.TabIndex = 6;
-            this.radioButton4.Text = "По группам";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton_group.AutoSize = true;
+            this.radioButton_group.Location = new System.Drawing.Point(21, 62);
+            this.radioButton_group.Name = "radioButton_group";
+            this.radioButton_group.Size = new System.Drawing.Size(131, 28);
+            this.radioButton_group.TabIndex = 6;
+            this.radioButton_group.Text = "По группам";
+            this.radioButton_group.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -385,6 +386,7 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column32,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -416,11 +418,31 @@ namespace KP_DEZHURSTVA
             this.Column29,
             this.Column30,
             this.Column31});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 160);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1295, 373);
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
+            this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(1310, 373);
             this.dataGridView1.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1017, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(295, 32);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Автозаполнение";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Column32
+            // 
+            this.Column32.HeaderText = "";
+            this.Column32.Name = "Column32";
+            this.Column32.ReadOnly = true;
+            this.Column32.Width = 250;
             // 
             // Column1
             // 
@@ -608,15 +630,6 @@ namespace KP_DEZHURSTVA
             this.Column31.Name = "Column31";
             this.Column31.ReadOnly = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1017, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(305, 32);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Автозаполнение";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // CreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -677,12 +690,14 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.RadioButton radioButton_day_might;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton_holidays_all;
+        private System.Windows.Forms.RadioButton radioButton_holidays_gos;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton_individ;
+        private System.Windows.Forms.RadioButton radioButton_group;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column32;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -714,6 +729,5 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column29;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
-        private System.Windows.Forms.Button button1;
     }
 }
