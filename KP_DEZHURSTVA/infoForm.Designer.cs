@@ -52,6 +52,8 @@ namespace KP_DEZHURSTVA
             this.groupBox_Next = new System.Windows.Forms.GroupBox();
             this.button_Next = new System.Windows.Forms.Button();
             this.listBox_Next = new System.Windows.Forms.ListBox();
+            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.groupBox_Current.SuspendLayout();
             this.groupBox_Next.SuspendLayout();
@@ -62,7 +64,8 @@ namespace KP_DEZHURSTVA
             this.menuStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_EquipmentDebit,
-            this.ToolStripMenuItem_Handbooks});
+            this.ToolStripMenuItem_Handbooks,
+            this.настройкиToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
@@ -293,6 +296,21 @@ namespace KP_DEZHURSTVA
             this.listBox_Next.TabIndex = 1;
             this.listBox_Next.SelectedIndexChanged += new System.EventHandler(this.listBox_Next_SelectedIndexChanged);
             // 
+            // настройкиToolStripMenuItem
+            // 
+            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиДежурствToolStripMenuItem});
+            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.настройкиToolStripMenuItem.Text = "Настройки";
+            // 
+            // настройкиДежурствToolStripMenuItem
+            // 
+            this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
+            this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
+            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
+            // 
             // infoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -341,6 +359,8 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.ToolStripMenuItem найтиToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem найтиToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem настройкиДежурствToolStripMenuItem;
     }
 }
 

@@ -177,5 +177,10 @@ namespace KP_DEZHURSTVA
             //if (showOwner)
               //  Owner.Visible = true;
         }
+
+        private void настройкиДежурствToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PreferencesForm().ShowDialog();
+        }
     }
 }

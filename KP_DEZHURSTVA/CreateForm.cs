@@ -343,5 +343,10 @@ namespace KP_DEZHURSTVA
         {
             saveFileDialog1.ShowDialog();
         }
+
+        private void настройкиДежурствToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PreferencesForm().ShowDialog();
+        }
     }
 }
