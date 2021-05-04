@@ -12,7 +12,9 @@ namespace KP_DEZHURSTVA
 {
     public partial class infoForm : Form
     {
-        public infoForm()
+        private bool showOwner = true;
+        private Form Owner = null;
+        public infoForm(Form Owner = null)
         {
             InitializeComponent();
 
@@ -83,7 +85,11 @@ namespace KP_DEZHURSTVA
 
         private void ToolStripMenuItem_Add_EquipmentDebit_Click(object sender, EventArgs e)
         {
+            showOwner = false;
 
+            CreateForm new_window = new CreateForm(this);
+            this.Visible = false;
+            new_window.Visible = true;
         }
 
         private void выходToolStripMenuItem_Exit_Click(object sender, EventArgs e)
@@ -164,6 +170,12 @@ namespace KP_DEZHURSTVA
         private void ToolStripMenuItem_Find_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void infoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //if (showOwner)
+              //  Owner.Visible = true;
         }
     }
 }

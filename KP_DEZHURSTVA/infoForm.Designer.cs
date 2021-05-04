@@ -37,8 +37,14 @@ namespace KP_DEZHURSTVA
             this.выходToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Handbooks = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Equipment_Handbook = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.найтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_GroupEquipment_Handbook = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.найтиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Workshop_Handbook = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.найтиToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.Time = new System.Windows.Forms.Label();
             this.groupBox_Current = new System.Windows.Forms.GroupBox();
             this.button_Current = new System.Windows.Forms.Button();
@@ -46,12 +52,6 @@ namespace KP_DEZHURSTVA
             this.groupBox_Next = new System.Windows.Forms.GroupBox();
             this.button_Next = new System.Windows.Forms.Button();
             this.listBox_Next = new System.Windows.Forms.ListBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.найтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.найтиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.найтиToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.groupBox_Current.SuspendLayout();
             this.groupBox_Next.SuspendLayout();
@@ -84,7 +84,7 @@ namespace KP_DEZHURSTVA
             // ToolStripMenuItem_Add
             // 
             this.ToolStripMenuItem_Add.Name = "ToolStripMenuItem_Add";
-            this.ToolStripMenuItem_Add.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItem_Add.Size = new System.Drawing.Size(215, 22);
             this.ToolStripMenuItem_Add.Text = "Создать";
             this.ToolStripMenuItem_Add.Click += new System.EventHandler(this.ToolStripMenuItem_Add_EquipmentDebit_Click);
             // 
@@ -99,13 +99,13 @@ namespace KP_DEZHURSTVA
             // отчётToolStripMenuItem_Report
             // 
             this.отчётToolStripMenuItem_Report.Name = "отчётToolStripMenuItem_Report";
-            this.отчётToolStripMenuItem_Report.Size = new System.Drawing.Size(180, 22);
+            this.отчётToolStripMenuItem_Report.Size = new System.Drawing.Size(215, 22);
             this.отчётToolStripMenuItem_Report.Text = "Отчёт";
             // 
             // выходToolStripMenuItem_Exit
             // 
             this.выходToolStripMenuItem_Exit.Name = "выходToolStripMenuItem_Exit";
-            this.выходToolStripMenuItem_Exit.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem_Exit.Size = new System.Drawing.Size(215, 22);
             this.выходToolStripMenuItem_Exit.Text = "Выход";
             this.выходToolStripMenuItem_Exit.Click += new System.EventHandler(this.выходToolStripMenuItem_Exit_Click);
             // 
@@ -128,6 +128,20 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Equipment_Handbook.Size = new System.Drawing.Size(212, 22);
             this.ToolStripMenuItem_Equipment_Handbook.Text = "Сотрудники";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.toolStripMenuItem1.Text = "Добавить";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // найтиToolStripMenuItem
+            // 
+            this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem.Text = "Найти";
+            this.найтиToolStripMenuItem.Click += new System.EventHandler(this.найтиToolStripMenuItem_Click);
+            // 
             // ToolStripMenuItem_GroupEquipment_Handbook
             // 
             this.ToolStripMenuItem_GroupEquipment_Handbook.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -137,6 +151,20 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_GroupEquipment_Handbook.Size = new System.Drawing.Size(212, 22);
             this.ToolStripMenuItem_GroupEquipment_Handbook.Text = "Группы сотрудников";
             // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.добавитьToolStripMenuItem.Text = "Добавить";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
+            // 
+            // найтиToolStripMenuItem1
+            // 
+            this.найтиToolStripMenuItem1.Name = "найтиToolStripMenuItem1";
+            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem1.Text = "Найти";
+            this.найтиToolStripMenuItem1.Click += new System.EventHandler(this.найтиToolStripMenuItem1_Click);
+            // 
             // ToolStripMenuItem_Workshop_Handbook
             // 
             this.ToolStripMenuItem_Workshop_Handbook.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -145,6 +173,20 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Workshop_Handbook.Name = "ToolStripMenuItem_Workshop_Handbook";
             this.ToolStripMenuItem_Workshop_Handbook.Size = new System.Drawing.Size(212, 22);
             this.ToolStripMenuItem_Workshop_Handbook.Text = "Праздничные дни";
+            // 
+            // добавитьToolStripMenuItem1
+            // 
+            this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
+            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.добавитьToolStripMenuItem1.Text = "Добавить";
+            this.добавитьToolStripMenuItem1.Click += new System.EventHandler(this.добавитьToolStripMenuItem1_Click);
+            // 
+            // найтиToolStripMenuItem2
+            // 
+            this.найтиToolStripMenuItem2.Name = "найтиToolStripMenuItem2";
+            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem2.Text = "Найти";
+            this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
             // 
             // Time
             // 
@@ -251,48 +293,6 @@ namespace KP_DEZHURSTVA
             this.listBox_Next.TabIndex = 1;
             this.listBox_Next.SelectedIndexChanged += new System.EventHandler(this.listBox_Next_SelectedIndexChanged);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "Добавить";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // найтиToolStripMenuItem
-            // 
-            this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.найтиToolStripMenuItem.Text = "Найти";
-            this.найтиToolStripMenuItem.Click += new System.EventHandler(this.найтиToolStripMenuItem_Click);
-            // 
-            // добавитьToolStripMenuItem
-            // 
-            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.добавитьToolStripMenuItem.Text = "Добавить";
-            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
-            // 
-            // найтиToolStripMenuItem1
-            // 
-            this.найтиToolStripMenuItem1.Name = "найтиToolStripMenuItem1";
-            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.найтиToolStripMenuItem1.Text = "Найти";
-            this.найтиToolStripMenuItem1.Click += new System.EventHandler(this.найтиToolStripMenuItem1_Click);
-            // 
-            // добавитьToolStripMenuItem1
-            // 
-            this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
-            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.добавитьToolStripMenuItem1.Text = "Добавить";
-            this.добавитьToolStripMenuItem1.Click += new System.EventHandler(this.добавитьToolStripMenuItem1_Click);
-            // 
-            // найтиToolStripMenuItem2
-            // 
-            this.найтиToolStripMenuItem2.Name = "найтиToolStripMenuItem2";
-            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.найтиToolStripMenuItem2.Text = "Найти";
-            this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
-            // 
             // infoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -306,6 +306,7 @@ namespace KP_DEZHURSTVA
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "infoForm";
             this.Text = "График дежурств - Краткая информация";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.infoForm_FormClosed);
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
