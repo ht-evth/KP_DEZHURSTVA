@@ -70,6 +70,12 @@
     <Compile Include="GroupFindForm.Designer.cs">
       <DependentUpon>GroupFindForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HolidayAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidayAddForm.Designer.cs">
+      <DependentUpon>HolidayAddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HolidayFindForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GroupFindForm.resx">
       <DependentUpon>GroupFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidayAddForm.resx">
+      <DependentUpon>HolidayAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HolidayFindForm.resx">
       <DependentUpon>HolidayFindForm.cs</DependentUpon>

@@ -13,7 +13,7 @@ namespace KP_DEZHURSTVA
     public partial class HolidayAddForm : Form
     {
         private bool is_edit = false;
-        public HolidayAddForm()
+        public HolidayAddForm(bool is_edit = false)
         {
             InitializeComponent();
 

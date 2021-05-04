@@ -36,18 +36,18 @@ namespace KP_DEZHURSTVA
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label_LastName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker_start = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker_end = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.checkBox = new System.Windows.Forms.CheckBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker_end = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_start = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,7 @@ namespace KP_DEZHURSTVA
             this.button3.TabIndex = 2;
             this.button3.Text = "Перейти к празднику";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView
             // 
@@ -98,6 +99,34 @@ namespace KP_DEZHURSTVA
             this.dataGridView.Size = new System.Drawing.Size(867, 261);
             this.dataGridView.TabIndex = 4;
             this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.FillWeight = 154.191F;
+            this.Column1.HeaderText = "Наименование";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 480;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column2.FillWeight = 5.686562F;
+            this.Column2.HeaderText = "Дата";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.FillWeight = 2.558953F;
+            this.Column3.HeaderText = "Государственный";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // button2
             // 
@@ -144,19 +173,33 @@ namespace KP_DEZHURSTVA
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры поиска";
             // 
-            // dateTimePicker_start
+            // checkBox
             // 
-            this.dateTimePicker_start.Checked = false;
-            this.dateTimePicker_start.CustomFormat = "dd MMMMMM";
-            this.dateTimePicker_start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_start.Location = new System.Drawing.Point(197, 42);
-            this.dateTimePicker_start.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker_start.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker_start.Name = "dateTimePicker_start";
-            this.dateTimePicker_start.ShowCheckBox = true;
-            this.dateTimePicker_start.Size = new System.Drawing.Size(210, 29);
-            this.dateTimePicker_start.TabIndex = 1;
-            this.dateTimePicker_start.Value = new System.DateTime(2021, 1, 1, 0, 1, 0, 0);
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(538, 41);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(292, 28);
+            this.checkBox.TabIndex = 32;
+            this.checkBox.Text = "Государственные праздники";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(100, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Дата до";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(102, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 24);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Дата от";
             // 
             // dateTimePicker_end
             // 
@@ -172,61 +215,19 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_end.TabIndex = 2;
             this.dateTimePicker_end.Value = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             // 
-            // label1
+            // dateTimePicker_start
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 24);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Дата от";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(100, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Дата до";
-            // 
-            // checkBox
-            // 
-            this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(538, 41);
-            this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(292, 28);
-            this.checkBox.TabIndex = 32;
-            this.checkBox.Text = "Государственные праздники";
-            this.checkBox.UseVisualStyleBackColor = true;
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.FillWeight = 154.191F;
-            this.Column1.HeaderText = "Наименование";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 480;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column2.FillWeight = 5.686562F;
-            this.Column2.HeaderText = "Дата";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.FillWeight = 2.558953F;
-            this.Column3.HeaderText = "Государственный";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.dateTimePicker_start.Checked = false;
+            this.dateTimePicker_start.CustomFormat = "dd MMMMMM";
+            this.dateTimePicker_start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_start.Location = new System.Drawing.Point(197, 42);
+            this.dateTimePicker_start.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker_start.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker_start.Name = "dateTimePicker_start";
+            this.dateTimePicker_start.ShowCheckBox = true;
+            this.dateTimePicker_start.Size = new System.Drawing.Size(210, 29);
+            this.dateTimePicker_start.TabIndex = 1;
+            this.dateTimePicker_start.Value = new System.DateTime(2021, 1, 1, 0, 1, 0, 0);
             // 
             // HolidayFindForm
             // 
@@ -238,7 +239,7 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "HolidayFindForm";
             this.Text = "Справочник - Праздники";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
