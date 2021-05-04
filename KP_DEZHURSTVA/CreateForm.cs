@@ -344,5 +344,35 @@ namespace KP_DEZHURSTVA
             new ReportForm().Show();
             this.Hide();
         }
+
+        private void добавитьToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new HolidayAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new HolidayFindForm().ShowDialog();
+        }
+
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new GroupAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new GroupFindForm().ShowDialog();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new PersoneAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PersoneFindForm().ShowDialog();
+        }
     }
 }

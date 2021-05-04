@@ -154,7 +154,7 @@ namespace KP_DEZHURSTVA
 
         private void добавитьToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            new HolidayAddForm().ShowDialog();
         }
 
         private void найтиToolStripMenuItem2_Click(object sender, EventArgs e)

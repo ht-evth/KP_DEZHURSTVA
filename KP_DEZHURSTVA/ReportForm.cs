@@ -232,5 +232,72 @@ namespace KP_DEZHURSTVA
         {
             new ExportForm().ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new SwapForm().ShowDialog();
+        }
+
+        private void отчётToolStripMenuItem_Report_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void экспортПечатьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button3.PerformClick();
+        }
+
+        private void ToolStripMenuItem_Add_Click(object sender, EventArgs e)
+        {
+            new CreateForm(this).Show();
+            this.Hide();
+        }
+
+        private void ToolStripMenuItem_Find_Click(object sender, EventArgs e)
+        {
+            new infoForm().Show();
+            this.Hide();
+        }
+
+        private void выходToolStripMenuItem_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new PersoneAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PersoneFindForm().ShowDialog();
+        }
+
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new GroupAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new GroupFindForm().ShowDialog();
+        }
+
+        private void добавитьToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new HolidayAddForm().ShowDialog();
+        }
+
+        private void найтиToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new HolidayFindForm().ShowDialog();
+        }
+
+        private void настройкиДежурствToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PreferencesForm().ShowDialog();
+        }
     }
 }

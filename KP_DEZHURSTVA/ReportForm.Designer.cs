@@ -29,7 +29,7 @@ namespace KP_DEZHURSTVA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,6 +89,7 @@ namespace KP_DEZHURSTVA
             this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button4 = new System.Windows.Forms.Button();
+            this.экспортПечатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -134,10 +135,10 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.dataGridView1.RowTemplate.Height = 30;
@@ -436,6 +437,7 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Add,
             this.ToolStripMenuItem_Find,
             this.отчётToolStripMenuItem_Report,
+            this.экспортПечатьToolStripMenuItem,
             this.выходToolStripMenuItem_Exit});
             this.ToolStripMenuItem_EquipmentDebit.Name = "ToolStripMenuItem_EquipmentDebit";
             this.ToolStripMenuItem_EquipmentDebit.Size = new System.Drawing.Size(55, 20);
@@ -446,25 +448,29 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Add.Name = "ToolStripMenuItem_Add";
             this.ToolStripMenuItem_Add.Size = new System.Drawing.Size(215, 22);
             this.ToolStripMenuItem_Add.Text = "Создать";
+            this.ToolStripMenuItem_Add.Click += new System.EventHandler(this.ToolStripMenuItem_Add_Click);
             // 
             // ToolStripMenuItem_Find
             // 
-            this.ToolStripMenuItem_Find.Enabled = false;
             this.ToolStripMenuItem_Find.Name = "ToolStripMenuItem_Find";
             this.ToolStripMenuItem_Find.Size = new System.Drawing.Size(215, 22);
             this.ToolStripMenuItem_Find.Text = "Краткая информация";
+            this.ToolStripMenuItem_Find.Click += new System.EventHandler(this.ToolStripMenuItem_Find_Click);
             // 
             // отчётToolStripMenuItem_Report
             // 
+            this.отчётToolStripMenuItem_Report.Enabled = false;
             this.отчётToolStripMenuItem_Report.Name = "отчётToolStripMenuItem_Report";
             this.отчётToolStripMenuItem_Report.Size = new System.Drawing.Size(215, 22);
-            this.отчётToolStripMenuItem_Report.Text = "Отчёт";
+            this.отчётToolStripMenuItem_Report.Text = "Графики дежурств";
+            this.отчётToolStripMenuItem_Report.Click += new System.EventHandler(this.отчётToolStripMenuItem_Report_Click);
             // 
             // выходToolStripMenuItem_Exit
             // 
             this.выходToolStripMenuItem_Exit.Name = "выходToolStripMenuItem_Exit";
             this.выходToolStripMenuItem_Exit.Size = new System.Drawing.Size(215, 22);
             this.выходToolStripMenuItem_Exit.Text = "Выход";
+            this.выходToolStripMenuItem_Exit.Click += new System.EventHandler(this.выходToolStripMenuItem_Exit_Click);
             // 
             // ToolStripMenuItem_Handbooks
             // 
@@ -488,14 +494,16 @@ namespace KP_DEZHURSTVA
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "Добавить";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem
             // 
             this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.найтиToolStripMenuItem.Text = "Найти";
+            this.найтиToolStripMenuItem.Click += new System.EventHandler(this.найтиToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem_GroupEquipment_Handbook
             // 
@@ -509,14 +517,16 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem
             // 
             this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.добавитьToolStripMenuItem.Text = "Добавить";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // найтиToolStripMenuItem1
             // 
             this.найтиToolStripMenuItem1.Name = "найтиToolStripMenuItem1";
-            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.найтиToolStripMenuItem1.Text = "Найти";
+            this.найтиToolStripMenuItem1.Click += new System.EventHandler(this.найтиToolStripMenuItem1_Click);
             // 
             // ToolStripMenuItem_Workshop_Handbook
             // 
@@ -530,14 +540,16 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem1
             // 
             this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
-            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
+            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.добавитьToolStripMenuItem1.Text = "Добавить";
+            this.добавитьToolStripMenuItem1.Click += new System.EventHandler(this.добавитьToolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem2
             // 
             this.найтиToolStripMenuItem2.Name = "найтиToolStripMenuItem2";
-            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
+            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.найтиToolStripMenuItem2.Text = "Найти";
+            this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
             // 
             // настройкиToolStripMenuItem
             // 
@@ -552,6 +564,7 @@ namespace KP_DEZHURSTVA
             this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
             this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
+            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
             // 
             // button4
             // 
@@ -561,6 +574,14 @@ namespace KP_DEZHURSTVA
             this.button4.TabIndex = 35;
             this.button4.Text = "Поменять местами";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // экспортПечатьToolStripMenuItem
+            // 
+            this.экспортПечатьToolStripMenuItem.Name = "экспортПечатьToolStripMenuItem";
+            this.экспортПечатьToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.экспортПечатьToolStripMenuItem.Text = "Экспорт / Печать";
+            this.экспортПечатьToolStripMenuItem.Click += new System.EventHandler(this.экспортПечатьToolStripMenuItem_Click);
             // 
             // ReportForm
             // 
@@ -649,5 +670,6 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.ToolStripMenuItem настройкиДежурствToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ToolStripMenuItem экспортПечатьToolStripMenuItem;
     }
 }
