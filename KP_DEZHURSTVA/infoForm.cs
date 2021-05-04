@@ -182,5 +182,11 @@ namespace KP_DEZHURSTVA
         {
             new PreferencesForm().ShowDialog();
         }
+
+        private void отчётToolStripMenuItem_Report_Click(object sender, EventArgs e)
+        {
+            new ReportForm().Show();
+            this.Hide();
+        }
     }
 }

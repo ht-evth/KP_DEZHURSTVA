@@ -104,6 +104,7 @@ namespace KP_DEZHURSTVA
             this.отчётToolStripMenuItem_Report.Name = "отчётToolStripMenuItem_Report";
             this.отчётToolStripMenuItem_Report.Size = new System.Drawing.Size(215, 22);
             this.отчётToolStripMenuItem_Report.Text = "Отчёт";
+            this.отчётToolStripMenuItem_Report.Click += new System.EventHandler(this.отчётToolStripMenuItem_Report_Click);
             // 
             // выходToolStripMenuItem_Exit
             // 

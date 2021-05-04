@@ -95,16 +95,6 @@ namespace KP_DEZHURSTVA
         }
 
 
-        private int GetNextPersone(int cur_index, int max_index)
-        {
-            int result = 0;
-            if (cur_index == max_index)
-                return result;
-            else
-                result++;
-
-            return result;
-        }
 
         private void GenerateColors(int cur_persone = 0)
         {
@@ -347,6 +337,12 @@ namespace KP_DEZHURSTVA
         private void настройкиДежурствToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new PreferencesForm().ShowDialog();
+        }
+
+        private void отчётToolStripMenuItem_Report_Click(object sender, EventArgs e)
+        {
+            new ReportForm().Show();
+            this.Hide();
         }
     }
 }
