@@ -55,6 +55,8 @@ namespace KP_DEZHURSTVA
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -305,7 +307,7 @@ namespace KP_DEZHURSTVA
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(476, 497);
+            this.button1.Location = new System.Drawing.Point(477, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 32);
             this.button1.TabIndex = 14;
@@ -315,18 +317,46 @@ namespace KP_DEZHURSTVA
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 497);
+            this.button2.Location = new System.Drawing.Point(12, 556);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 32);
             this.button2.TabIndex = 15;
             this.button2.Text = "По умолчанию";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 509);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(155, 24);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Стартовое окно";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Создать новый график дежурств",
+            "Краткая информация",
+            "Поиск сотрудников",
+            "Добавить сотрудника",
+            "Поиск групп сотрудников",
+            "Добавить группу",
+            "Поиск праздничных дней",
+            "Добавить праздничный день"});
+            this.comboBox1.Location = new System.Drawing.Point(190, 506);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(450, 32);
+            this.comboBox1.TabIndex = 17;
+            // 
             // PreferencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 540);
+            this.ClientSize = new System.Drawing.Size(652, 600);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
@@ -376,5 +406,7 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
