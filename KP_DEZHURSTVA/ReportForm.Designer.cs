@@ -29,7 +29,7 @@ namespace KP_DEZHURSTVA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +68,6 @@ namespace KP_DEZHURSTVA
             this.comboBox_year = new System.Windows.Forms.ComboBox();
             this.comboBox_month = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem_EquipmentDebit = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,10 +134,10 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.dataGridView1.RowTemplate.Height = 30;
@@ -407,24 +406,15 @@ namespace KP_DEZHURSTVA
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1006, 53);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 32);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Экспорт";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1168, 53);
+            this.button3.Location = new System.Drawing.Point(1106, 53);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 32);
+            this.button3.Size = new System.Drawing.Size(212, 32);
             this.button3.TabIndex = 33;
-            this.button3.Text = "Печать";
+            this.button3.Text = "Экспорт / Печать";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // menuStrip
             // 
@@ -565,9 +555,9 @@ namespace KP_DEZHURSTVA
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(779, 53);
+            this.button4.Location = new System.Drawing.Point(752, 53);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(212, 32);
+            this.button4.Size = new System.Drawing.Size(241, 32);
             this.button4.TabIndex = 35;
             this.button4.Text = "Поменять местами";
             this.button4.UseVisualStyleBackColor = true;
@@ -580,7 +570,6 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.button4);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -639,7 +628,6 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.ComboBox comboBox_year;
         private System.Windows.Forms.ComboBox comboBox_month;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_EquipmentDebit;

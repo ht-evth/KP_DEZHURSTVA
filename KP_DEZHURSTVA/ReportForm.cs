@@ -227,5 +227,10 @@ namespace KP_DEZHURSTVA
         {
             saveFileDialog1.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new ExportForm().ShowDialog();
+        }
     }
 }
