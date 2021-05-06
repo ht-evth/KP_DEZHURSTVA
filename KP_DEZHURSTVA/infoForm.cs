@@ -188,5 +188,10 @@ namespace KP_DEZHURSTVA
             new ReportForm().Show();
             this.Hide();
         }
+
+        private void infoForm_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

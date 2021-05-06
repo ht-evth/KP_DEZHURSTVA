@@ -29,7 +29,7 @@ namespace KP_DEZHURSTVA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.comboBox_month = new System.Windows.Forms.ComboBox();
             this.comboBox_year = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,6 +37,8 @@ namespace KP_DEZHURSTVA
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem_EquipmentDebit = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Add = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.печатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Find = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётToolStripMenuItem_Report = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +52,8 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Workshop_Handbook = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.найтиToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioButton_day = new System.Windows.Forms.RadioButton();
             this.radioButton_day_might = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,6 +61,8 @@ namespace KP_DEZHURSTVA
             this.radioButton_holidays_all = new System.Windows.Forms.RadioButton();
             this.radioButton_holidays_gos = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.radioButton_individ = new System.Windows.Forms.RadioButton();
             this.radioButton_group = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -94,21 +100,15 @@ namespace KP_DEZHURSTVA
             this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.печатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_month
@@ -204,6 +204,20 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Add.Size = new System.Drawing.Size(215, 22);
             this.ToolStripMenuItem_Add.Text = "Создать";
             // 
+            // сохранитьКакToolStripMenuItem
+            // 
+            this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
+            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.сохранитьКакToolStripMenuItem.Text = "Сохранить как...";
+            this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
+            // 
+            // печатьToolStripMenuItem
+            // 
+            this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
+            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.печатьToolStripMenuItem.Text = "Печать";
+            this.печатьToolStripMenuItem.Click += new System.EventHandler(this.печатьToolStripMenuItem_Click);
+            // 
             // ToolStripMenuItem_Find
             // 
             this.ToolStripMenuItem_Find.Name = "ToolStripMenuItem_Find";
@@ -246,14 +260,14 @@ namespace KP_DEZHURSTVA
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.toolStripMenuItem1.Text = "Добавить";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem
             // 
             this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem.Text = "Найти";
             this.найтиToolStripMenuItem.Click += new System.EventHandler(this.найтиToolStripMenuItem_Click);
             // 
@@ -269,14 +283,14 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem
             // 
             this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.добавитьToolStripMenuItem.Text = "Добавить";
             this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // найтиToolStripMenuItem1
             // 
             this.найтиToolStripMenuItem1.Name = "найтиToolStripMenuItem1";
-            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem1.Text = "Найти";
             this.найтиToolStripMenuItem1.Click += new System.EventHandler(this.найтиToolStripMenuItem1_Click);
             // 
@@ -292,16 +306,31 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem1
             // 
             this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
-            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.добавитьToolStripMenuItem1.Text = "Добавить";
             this.добавитьToolStripMenuItem1.Click += new System.EventHandler(this.добавитьToolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem2
             // 
             this.найтиToolStripMenuItem2.Name = "найтиToolStripMenuItem2";
-            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem2.Text = "Найти";
             this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
+            // 
+            // настройкиToolStripMenuItem
+            // 
+            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиДежурствToolStripMenuItem});
+            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.настройкиToolStripMenuItem.Text = "Настройки";
+            // 
+            // настройкиДежурствToolStripMenuItem
+            // 
+            this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
+            this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
+            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
             // 
             // radioButton_day
             // 
@@ -310,7 +339,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_day.Location = new System.Drawing.Point(21, 28);
             this.radioButton_day.Name = "radioButton_day";
             this.radioButton_day.Size = new System.Drawing.Size(75, 28);
-            this.radioButton_day.TabIndex = 5;
+            this.radioButton_day.TabIndex = 7;
             this.radioButton_day.TabStop = true;
             this.radioButton_day.Text = "День";
             this.radioButton_day.UseVisualStyleBackColor = true;
@@ -321,7 +350,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_day_might.Location = new System.Drawing.Point(21, 62);
             this.radioButton_day_might.Name = "radioButton_day_might";
             this.radioButton_day_might.Size = new System.Drawing.Size(134, 28);
-            this.radioButton_day_might.TabIndex = 6;
+            this.radioButton_day_might.TabIndex = 8;
             this.radioButton_day_might.Text = "День - ночь";
             this.radioButton_day_might.UseVisualStyleBackColor = true;
             // 
@@ -332,7 +361,7 @@ namespace KP_DEZHURSTVA
             this.groupBox1.Location = new System.Drawing.Point(648, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Тип дежурства";
             // 
@@ -343,7 +372,7 @@ namespace KP_DEZHURSTVA
             this.groupBox2.Location = new System.Drawing.Point(864, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(240, 100);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Выходные";
             // 
@@ -354,7 +383,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_holidays_all.Location = new System.Drawing.Point(15, 28);
             this.radioButton_holidays_all.Name = "radioButton_holidays_all";
             this.radioButton_holidays_all.Size = new System.Drawing.Size(61, 28);
-            this.radioButton_holidays_all.TabIndex = 7;
+            this.radioButton_holidays_all.TabIndex = 10;
             this.radioButton_holidays_all.TabStop = true;
             this.radioButton_holidays_all.Text = "Все";
             this.radioButton_holidays_all.UseVisualStyleBackColor = true;
@@ -365,7 +394,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_holidays_gos.Location = new System.Drawing.Point(15, 62);
             this.radioButton_holidays_gos.Name = "radioButton_holidays_gos";
             this.radioButton_holidays_gos.Size = new System.Drawing.Size(190, 28);
-            this.radioButton_holidays_gos.TabIndex = 8;
+            this.radioButton_holidays_gos.TabIndex = 11;
             this.radioButton_holidays_gos.Text = "Государственные";
             this.radioButton_holidays_gos.UseVisualStyleBackColor = true;
             // 
@@ -378,9 +407,37 @@ namespace KP_DEZHURSTVA
             this.groupBox3.Location = new System.Drawing.Point(277, 31);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(356, 100);
-            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Тип графика";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(231, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 32);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Кол-во в\r\nсмене";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numericUpDown1.Location = new System.Drawing.Point(300, 27);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(50, 24);
+            this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // radioButton_individ
             // 
@@ -389,7 +446,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_individ.Location = new System.Drawing.Point(21, 28);
             this.radioButton_individ.Name = "radioButton_individ";
             this.radioButton_individ.Size = new System.Drawing.Size(189, 28);
-            this.radioButton_individ.TabIndex = 5;
+            this.radioButton_individ.TabIndex = 3;
             this.radioButton_individ.TabStop = true;
             this.radioButton_individ.Text = "Индивидуальный.";
             this.radioButton_individ.UseVisualStyleBackColor = true;
@@ -400,7 +457,7 @@ namespace KP_DEZHURSTVA
             this.radioButton_group.Location = new System.Drawing.Point(21, 62);
             this.radioButton_group.Name = "radioButton_group";
             this.radioButton_group.Size = new System.Drawing.Size(131, 28);
-            this.radioButton_group.TabIndex = 6;
+            this.radioButton_group.TabIndex = 5;
             this.radioButton_group.Text = "По группам";
             this.radioButton_group.UseVisualStyleBackColor = true;
             this.radioButton_group.CheckedChanged += new System.EventHandler(this.radioButton_group_CheckedChanged);
@@ -446,10 +503,10 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.Location = new System.Drawing.Point(12, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.dataGridView1.RowTemplate.Height = 30;
@@ -656,7 +713,7 @@ namespace KP_DEZHURSTVA
             this.button1.Location = new System.Drawing.Point(1122, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 32);
-            this.button1.TabIndex = 26;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Автозаполнение";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -673,76 +730,19 @@ namespace KP_DEZHURSTVA
     "тва. Двойной клик по ячейке - выходной. Клик правой кнопкой мыши - очистить ячей" +
     "ку.\r\n";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown1.Location = new System.Drawing.Point(300, 27);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(50, 24);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(231, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 32);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Кол-во в\r\nсмене";
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(1122, 91);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(189, 32);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 13;
             this.button2.Text = "Сохранить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // сохранитьКакToolStripMenuItem
-            // 
-            this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.сохранитьКакToolStripMenuItem.Text = "Сохранить как...";
-            this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
-            // 
-            // печатьToolStripMenuItem
-            // 
-            this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
-            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.печатьToolStripMenuItem.Text = "Печать";
-            this.печатьToolStripMenuItem.Click += new System.EventHandler(this.печатьToolStripMenuItem_Click);
-            // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
-            // 
-            // настройкиToolStripMenuItem
-            // 
-            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиДежурствToolStripMenuItem});
-            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.настройкиToolStripMenuItem.Text = "Настройки";
-            // 
-            // настройкиДежурствToolStripMenuItem
-            // 
-            this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
-            this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
-            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
             // 
             // CreateForm
             // 
@@ -763,6 +763,9 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.comboBox_month);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1350, 604);
+            this.MinimumSize = new System.Drawing.Size(1350, 604);
             this.Name = "CreateForm";
             this.Text = "Создать график дежурства";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreateForm_FormClosed);
@@ -774,8 +777,8 @@ namespace KP_DEZHURSTVA
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

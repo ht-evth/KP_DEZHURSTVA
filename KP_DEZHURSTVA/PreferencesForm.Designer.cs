@@ -32,12 +32,12 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_day_start = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_day_end = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker_day_per_start = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_day_per_end = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,10 +48,10 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_night_start = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_night_end = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -69,7 +69,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_day_start.Location = new System.Drawing.Point(167, 37);
             this.dateTimePicker_day_start.Name = "dateTimePicker_day_start";
             this.dateTimePicker_day_start.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_day_start.TabIndex = 0;
+            this.dateTimePicker_day_start.TabIndex = 1;
             // 
             // dateTimePicker_day_end
             // 
@@ -78,7 +78,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_day_end.Location = new System.Drawing.Point(167, 90);
             this.dateTimePicker_day_end.Name = "dateTimePicker_day_end";
             this.dateTimePicker_day_end.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_day_end.TabIndex = 1;
+            this.dateTimePicker_day_end.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -93,9 +93,45 @@ namespace KP_DEZHURSTVA
             this.groupBox1.Location = new System.Drawing.Point(12, 53);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(629, 141);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "День";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(380, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 24);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Перерыв до";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(380, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Перерыв с";
+            // 
+            // dateTimePicker_day_per_start
+            // 
+            this.dateTimePicker_day_per_start.CustomFormat = "HH:mm";
+            this.dateTimePicker_day_per_start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_day_per_start.Location = new System.Drawing.Point(527, 37);
+            this.dateTimePicker_day_per_start.Name = "dateTimePicker_day_per_start";
+            this.dateTimePicker_day_per_start.Size = new System.Drawing.Size(77, 29);
+            this.dateTimePicker_day_per_start.TabIndex = 3;
+            // 
+            // dateTimePicker_day_per_end
+            // 
+            this.dateTimePicker_day_per_end.CustomFormat = "HH:mm";
+            this.dateTimePicker_day_per_end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_day_per_end.Location = new System.Drawing.Point(527, 91);
+            this.dateTimePicker_day_per_end.Name = "dateTimePicker_day_per_end";
+            this.dateTimePicker_day_per_end.Size = new System.Drawing.Size(77, 29);
+            this.dateTimePicker_day_per_end.TabIndex = 4;
             // 
             // label1
             // 
@@ -115,42 +151,6 @@ namespace KP_DEZHURSTVA
             this.label2.TabIndex = 4;
             this.label2.Text = "Дежурство с";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(380, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 24);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Перерыв до";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(380, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 24);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Перерыв с";
-            // 
-            // dateTimePicker_day_per_start
-            // 
-            this.dateTimePicker_day_per_start.CustomFormat = "HH:mm";
-            this.dateTimePicker_day_per_start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_day_per_start.Location = new System.Drawing.Point(527, 38);
-            this.dateTimePicker_day_per_start.Name = "dateTimePicker_day_per_start";
-            this.dateTimePicker_day_per_start.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_day_per_start.TabIndex = 7;
-            // 
-            // dateTimePicker_day_per_end
-            // 
-            this.dateTimePicker_day_per_end.CustomFormat = "HH:mm";
-            this.dateTimePicker_day_per_end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_day_per_end.Location = new System.Drawing.Point(527, 91);
-            this.dateTimePicker_day_per_end.Name = "dateTimePicker_day_per_end";
-            this.dateTimePicker_day_per_end.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_day_per_end.TabIndex = 8;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label3);
@@ -164,7 +164,7 @@ namespace KP_DEZHURSTVA
             this.groupBox2.Location = new System.Drawing.Point(12, 200);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(629, 141);
-            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ночь";
             // 
@@ -193,7 +193,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_night_per_start.Location = new System.Drawing.Point(527, 38);
             this.dateTimePicker_night_per_start.Name = "dateTimePicker_night_per_start";
             this.dateTimePicker_night_per_start.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_night_per_start.TabIndex = 7;
+            this.dateTimePicker_night_per_start.TabIndex = 8;
             // 
             // dateTimePicker_night_per_end
             // 
@@ -202,7 +202,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_night_per_end.Location = new System.Drawing.Point(527, 91);
             this.dateTimePicker_night_per_end.Name = "dateTimePicker_night_per_end";
             this.dateTimePicker_night_per_end.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_night_per_end.TabIndex = 8;
+            this.dateTimePicker_night_per_end.TabIndex = 9;
             // 
             // label7
             // 
@@ -229,7 +229,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_night_start.Location = new System.Drawing.Point(167, 37);
             this.dateTimePicker_night_start.Name = "dateTimePicker_night_start";
             this.dateTimePicker_night_start.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_night_start.TabIndex = 0;
+            this.dateTimePicker_night_start.TabIndex = 6;
             // 
             // dateTimePicker_night_end
             // 
@@ -238,7 +238,7 @@ namespace KP_DEZHURSTVA
             this.dateTimePicker_night_end.Location = new System.Drawing.Point(167, 90);
             this.dateTimePicker_night_end.Name = "dateTimePicker_night_end";
             this.dateTimePicker_night_end.Size = new System.Drawing.Size(77, 29);
-            this.dateTimePicker_night_end.TabIndex = 1;
+            this.dateTimePicker_night_end.TabIndex = 7;
             // 
             // groupBox3
             // 
@@ -249,9 +249,39 @@ namespace KP_DEZHURSTVA
             this.groupBox3.Location = new System.Drawing.Point(11, 347);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(629, 141);
-            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Дежурство в прадничные и выходные дни";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(25, 86);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(280, 28);
+            this.radioButton4.TabIndex = 12;
+            this.radioButton4.Text = "По выходным и праздникам";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(440, 40);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(165, 28);
+            this.radioButton3.TabIndex = 13;
+            this.radioButton3.Text = "По праздникам";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(440, 86);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(151, 28);
+            this.radioButton2.TabIndex = 14;
+            this.radioButton2.Text = "По выходным";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
@@ -260,40 +290,10 @@ namespace KP_DEZHURSTVA
             this.radioButton1.Location = new System.Drawing.Point(25, 40);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(62, 28);
-            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabIndex = 11;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Нет";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(440, 86);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(151, 28);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "По выходным";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(440, 40);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(165, 28);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "По праздникам";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(25, 86);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(280, 28);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.Text = "По выходным и праздникам";
-            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -310,7 +310,7 @@ namespace KP_DEZHURSTVA
             this.button1.Location = new System.Drawing.Point(477, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 32);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 16;
             this.button1.Text = "Применить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -320,7 +320,7 @@ namespace KP_DEZHURSTVA
             this.button2.Location = new System.Drawing.Point(12, 556);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 32);
-            this.button2.TabIndex = 15;
+            this.button2.TabIndex = 17;
             this.button2.Text = "По умолчанию";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -348,7 +348,7 @@ namespace KP_DEZHURSTVA
             this.comboBox1.Location = new System.Drawing.Point(190, 506);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(450, 32);
-            this.comboBox1.TabIndex = 17;
+            this.comboBox1.TabIndex = 15;
             // 
             // PreferencesForm
             // 
@@ -364,7 +364,10 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(668, 639);
+            this.MinimumSize = new System.Drawing.Size(668, 639);
             this.Name = "PreferencesForm";
             this.Text = "Настройки";
             this.groupBox1.ResumeLayout(false);

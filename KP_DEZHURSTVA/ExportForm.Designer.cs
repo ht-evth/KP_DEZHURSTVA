@@ -30,16 +30,16 @@ namespace KP_DEZHURSTVA
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label_end_year = new System.Windows.Forms.Label();
+            this.label_end_month = new System.Windows.Forms.Label();
+            this.comboBox_end_year = new System.Windows.Forms.ComboBox();
+            this.comboBox_end_month = new System.Windows.Forms.ComboBox();
+            this.label_start_year = new System.Windows.Forms.Label();
+            this.label_start_month = new System.Windows.Forms.Label();
+            this.comboBox_start_year = new System.Windows.Forms.ComboBox();
+            this.comboBox_start_month = new System.Windows.Forms.ComboBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox_year = new System.Windows.Forms.ComboBox();
-            this.comboBox_month = new System.Windows.Forms.ComboBox();
-            this.label_start = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label_end = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -49,14 +49,14 @@ namespace KP_DEZHURSTVA
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label_end);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label_start);
-            this.groupBox1.Controls.Add(this.comboBox_year);
-            this.groupBox1.Controls.Add(this.comboBox_month);
+            this.groupBox1.Controls.Add(this.label_end_year);
+            this.groupBox1.Controls.Add(this.label_end_month);
+            this.groupBox1.Controls.Add(this.comboBox_end_year);
+            this.groupBox1.Controls.Add(this.comboBox_end_month);
+            this.groupBox1.Controls.Add(this.label_start_year);
+            this.groupBox1.Controls.Add(this.label_start_month);
+            this.groupBox1.Controls.Add(this.comboBox_start_year);
+            this.groupBox1.Controls.Add(this.comboBox_start_month);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -66,41 +66,92 @@ namespace KP_DEZHURSTVA
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Диапазон месяцев для экспорта/печати";
             // 
-            // radioButton1
+            // label_end_year
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 40);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(137, 28);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Один месяц";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.label_end_year.AutoSize = true;
+            this.label_end_year.Location = new System.Drawing.Point(484, 93);
+            this.label_end_year.Name = "label_end_year";
+            this.label_end_year.Size = new System.Drawing.Size(44, 24);
+            this.label_end_year.TabIndex = 38;
+            this.label_end_year.Text = "Год";
+            this.label_end_year.Visible = false;
             // 
-            // radioButton2
+            // label_end_month
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(24, 89);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(116, 28);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Диапазон";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label_end_month.AutoSize = true;
+            this.label_end_month.Location = new System.Drawing.Point(256, 91);
+            this.label_end_month.Name = "label_end_month";
+            this.label_end_month.Size = new System.Drawing.Size(35, 24);
+            this.label_end_month.TabIndex = 37;
+            this.label_end_month.Text = "До";
+            this.label_end_month.Visible = false;
             // 
-            // label2
+            // comboBox_end_year
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(484, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 24);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Год";
+            this.comboBox_end_year.FormattingEnabled = true;
+            this.comboBox_end_year.Items.AddRange(new object[] {
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030",
+            "2031"});
+            this.comboBox_end_year.Location = new System.Drawing.Point(534, 89);
+            this.comboBox_end_year.Name = "comboBox_end_year";
+            this.comboBox_end_year.Size = new System.Drawing.Size(158, 32);
+            this.comboBox_end_year.TabIndex = 5;
+            this.comboBox_end_year.Visible = false;
             // 
-            // comboBox_year
+            // comboBox_end_month
             // 
-            this.comboBox_year.FormattingEnabled = true;
-            this.comboBox_year.Items.AddRange(new object[] {
+            this.comboBox_end_month.FormattingEnabled = true;
+            this.comboBox_end_month.Items.AddRange(new object[] {
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"});
+            this.comboBox_end_month.Location = new System.Drawing.Point(297, 88);
+            this.comboBox_end_month.Name = "comboBox_end_month";
+            this.comboBox_end_month.Size = new System.Drawing.Size(158, 32);
+            this.comboBox_end_month.TabIndex = 4;
+            this.comboBox_end_month.Visible = false;
+            // 
+            // label_start_year
+            // 
+            this.label_start_year.AutoSize = true;
+            this.label_start_year.Location = new System.Drawing.Point(484, 44);
+            this.label_start_year.Name = "label_start_year";
+            this.label_start_year.Size = new System.Drawing.Size(44, 24);
+            this.label_start_year.TabIndex = 34;
+            this.label_start_year.Text = "Год";
+            // 
+            // label_start_month
+            // 
+            this.label_start_month.AutoSize = true;
+            this.label_start_month.Location = new System.Drawing.Point(256, 42);
+            this.label_start_month.Name = "label_start_month";
+            this.label_start_month.Size = new System.Drawing.Size(35, 24);
+            this.label_start_month.TabIndex = 33;
+            this.label_start_month.Text = "От";
+            this.label_start_month.Visible = false;
+            // 
+            // comboBox_start_year
+            // 
+            this.comboBox_start_year.FormattingEnabled = true;
+            this.comboBox_start_year.Items.AddRange(new object[] {
             "2018",
             "2019",
             "2020",
@@ -115,15 +166,15 @@ namespace KP_DEZHURSTVA
             "2029",
             "2030",
             "2031"});
-            this.comboBox_year.Location = new System.Drawing.Point(534, 40);
-            this.comboBox_year.Name = "comboBox_year";
-            this.comboBox_year.Size = new System.Drawing.Size(158, 32);
-            this.comboBox_year.TabIndex = 32;
+            this.comboBox_start_year.Location = new System.Drawing.Point(534, 40);
+            this.comboBox_start_year.Name = "comboBox_start_year";
+            this.comboBox_start_year.Size = new System.Drawing.Size(158, 32);
+            this.comboBox_start_year.TabIndex = 3;
             // 
-            // comboBox_month
+            // comboBox_start_month
             // 
-            this.comboBox_month.FormattingEnabled = true;
-            this.comboBox_month.Items.AddRange(new object[] {
+            this.comboBox_start_month.FormattingEnabled = true;
+            this.comboBox_start_month.Items.AddRange(new object[] {
             "Январь",
             "Февраль",
             "Март",
@@ -136,85 +187,40 @@ namespace KP_DEZHURSTVA
             "Октябрь",
             "Ноябрь",
             "Декабрь"});
-            this.comboBox_month.Location = new System.Drawing.Point(297, 39);
-            this.comboBox_month.Name = "comboBox_month";
-            this.comboBox_month.Size = new System.Drawing.Size(158, 32);
-            this.comboBox_month.TabIndex = 31;
+            this.comboBox_start_month.Location = new System.Drawing.Point(297, 39);
+            this.comboBox_start_month.Name = "comboBox_start_month";
+            this.comboBox_start_month.Size = new System.Drawing.Size(158, 32);
+            this.comboBox_start_month.TabIndex = 2;
             // 
-            // label_start
+            // radioButton2
             // 
-            this.label_start.AutoSize = true;
-            this.label_start.Location = new System.Drawing.Point(256, 42);
-            this.label_start.Name = "label_start";
-            this.label_start.Size = new System.Drawing.Size(35, 24);
-            this.label_start.TabIndex = 33;
-            this.label_start.Text = "От";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(24, 89);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(116, 28);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "Диапазон";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // label1
+            // radioButton1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(484, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 24);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Год";
-            // 
-            // label_end
-            // 
-            this.label_end.AutoSize = true;
-            this.label_end.Location = new System.Drawing.Point(256, 91);
-            this.label_end.Name = "label_end";
-            this.label_end.Size = new System.Drawing.Size(35, 24);
-            this.label_end.TabIndex = 37;
-            this.label_end.Text = "До";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029",
-            "2030",
-            "2031"});
-            this.comboBox1.Location = new System.Drawing.Point(534, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 32);
-            this.comboBox1.TabIndex = 36;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Январь",
-            "Февраль",
-            "Март",
-            "Апрель",
-            "Май",
-            "Июнь",
-            "Июль",
-            "Август",
-            "Сентябрь",
-            "Октябрь",
-            "Ноябрь",
-            "Декабрь"});
-            this.comboBox2.Location = new System.Drawing.Point(297, 88);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(158, 32);
-            this.comboBox2.TabIndex = 35;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(24, 40);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(137, 28);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Один месяц";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(476, 174);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(248, 32);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Экспортировать в Excel";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -224,7 +230,7 @@ namespace KP_DEZHURSTVA
             this.button2.Location = new System.Drawing.Point(121, 174);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(346, 32);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Экспортировать в Excel и печать";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -242,7 +248,9 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximumSize = new System.Drawing.Size(752, 257);
+            this.MinimumSize = new System.Drawing.Size(752, 257);
             this.Name = "ExportForm";
             this.Text = "Экспорт и печать графика дежурств";
             this.groupBox1.ResumeLayout(false);
@@ -256,14 +264,14 @@ namespace KP_DEZHURSTVA
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox_year;
-        private System.Windows.Forms.ComboBox comboBox_month;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label_end;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label_start;
+        private System.Windows.Forms.Label label_start_year;
+        private System.Windows.Forms.ComboBox comboBox_start_year;
+        private System.Windows.Forms.ComboBox comboBox_start_month;
+        private System.Windows.Forms.Label label_end_year;
+        private System.Windows.Forms.Label label_end_month;
+        private System.Windows.Forms.ComboBox comboBox_end_year;
+        private System.Windows.Forms.ComboBox comboBox_end_month;
+        private System.Windows.Forms.Label label_start_month;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;

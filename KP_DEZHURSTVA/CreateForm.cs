@@ -31,7 +31,8 @@ namespace KP_DEZHURSTVA
         private void CreateForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             //if (showOwner)
-              //  Owner.Visible = true;
+            //  Owner.Visible = true;
+            Application.Exit();
         }
 
         private void ToolStripMenuItem_Find_Click(object sender, EventArgs e)

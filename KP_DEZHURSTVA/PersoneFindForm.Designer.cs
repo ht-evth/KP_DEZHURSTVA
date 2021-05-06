@@ -39,16 +39,16 @@ namespace KP_DEZHURSTVA
             this.label_SerialNum = new System.Windows.Forms.Label();
             this.label_LastName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -147,9 +147,27 @@ namespace KP_DEZHURSTVA
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(867, 223);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры поиска";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(533, 176);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(303, 32);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Сбросить параметры поиска";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(533, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(303, 32);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Найти";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -166,24 +184,6 @@ namespace KP_DEZHURSTVA
             this.comboBox1.Size = new System.Drawing.Size(272, 32);
             this.comboBox1.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(533, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(303, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Найти";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(533, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(303, 32);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Сбросить параметры поиска";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // dataGridView
             // 
             this.dataGridView.AllowUserToAddRows = false;
@@ -192,45 +192,13 @@ namespace KP_DEZHURSTVA
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView.Location = new System.Drawing.Point(12, 288);
+            this.dataGridView.Location = new System.Drawing.Point(2, 299);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(867, 261);
-            this.dataGridView.TabIndex = 5;
+            this.dataGridView.TabIndex = 11;
             this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // button3
-            // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(12, 251);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Изменить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(178, 251);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 32);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Удалить";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(603, 250);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(275, 32);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Подробнее о сотруднике";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Column1
             // 
@@ -256,6 +224,38 @@ namespace KP_DEZHURSTVA
             this.Column3.ReadOnly = true;
             this.Column3.Width = 250;
             // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Location = new System.Drawing.Point(12, 251);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 32);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Изменить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Enabled = false;
+            this.button4.Location = new System.Drawing.Point(178, 251);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 32);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Удалить";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Enabled = false;
+            this.button5.Location = new System.Drawing.Point(603, 250);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(275, 32);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Подробнее о сотруднике";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // PersoneFindForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -267,7 +267,10 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(906, 600);
+            this.MinimumSize = new System.Drawing.Size(906, 600);
             this.Name = "PersoneFindForm";
             this.Text = "Справочник - Сотрудники";
             this.groupBox1.ResumeLayout(false);

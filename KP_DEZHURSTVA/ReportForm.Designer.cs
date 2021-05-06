@@ -29,7 +29,7 @@ namespace KP_DEZHURSTVA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,6 +74,7 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Add = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Find = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётToolStripMenuItem_Report = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортПечатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Handbooks = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Equipment_Handbook = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +90,6 @@ namespace KP_DEZHURSTVA
             this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button4 = new System.Windows.Forms.Button();
-            this.экспортПечатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -135,10 +135,10 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.dataGridView1.RowTemplate.Height = 30;
@@ -374,7 +374,7 @@ namespace KP_DEZHURSTVA
             this.comboBox_year.Location = new System.Drawing.Point(344, 53);
             this.comboBox_year.Name = "comboBox_year";
             this.comboBox_year.Size = new System.Drawing.Size(158, 32);
-            this.comboBox_year.TabIndex = 28;
+            this.comboBox_year.TabIndex = 1;
             // 
             // comboBox_month
             // 
@@ -395,14 +395,14 @@ namespace KP_DEZHURSTVA
             this.comboBox_month.Location = new System.Drawing.Point(94, 52);
             this.comboBox_month.Name = "comboBox_month";
             this.comboBox_month.Size = new System.Drawing.Size(158, 32);
-            this.comboBox_month.TabIndex = 27;
+            this.comboBox_month.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(523, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 32);
-            this.button1.TabIndex = 31;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Отобразить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -412,7 +412,7 @@ namespace KP_DEZHURSTVA
             this.button3.Location = new System.Drawing.Point(1106, 53);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(212, 32);
-            this.button3.TabIndex = 33;
+            this.button3.TabIndex = 4;
             this.button3.Text = "Экспорт / Печать";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -465,6 +465,13 @@ namespace KP_DEZHURSTVA
             this.отчётToolStripMenuItem_Report.Text = "Графики дежурств";
             this.отчётToolStripMenuItem_Report.Click += new System.EventHandler(this.отчётToolStripMenuItem_Report_Click);
             // 
+            // экспортПечатьToolStripMenuItem
+            // 
+            this.экспортПечатьToolStripMenuItem.Name = "экспортПечатьToolStripMenuItem";
+            this.экспортПечатьToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.экспортПечатьToolStripMenuItem.Text = "Экспорт / Печать";
+            this.экспортПечатьToolStripMenuItem.Click += new System.EventHandler(this.экспортПечатьToolStripMenuItem_Click);
+            // 
             // выходToolStripMenuItem_Exit
             // 
             this.выходToolStripMenuItem_Exit.Name = "выходToolStripMenuItem_Exit";
@@ -494,14 +501,14 @@ namespace KP_DEZHURSTVA
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.toolStripMenuItem1.Text = "Добавить";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem
             // 
             this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem.Text = "Найти";
             this.найтиToolStripMenuItem.Click += new System.EventHandler(this.найтиToolStripMenuItem_Click);
             // 
@@ -517,14 +524,14 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem
             // 
             this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.добавитьToolStripMenuItem.Text = "Добавить";
             this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // найтиToolStripMenuItem1
             // 
             this.найтиToolStripMenuItem1.Name = "найтиToolStripMenuItem1";
-            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem1.Text = "Найти";
             this.найтиToolStripMenuItem1.Click += new System.EventHandler(this.найтиToolStripMenuItem1_Click);
             // 
@@ -540,14 +547,14 @@ namespace KP_DEZHURSTVA
             // добавитьToolStripMenuItem1
             // 
             this.добавитьToolStripMenuItem1.Name = "добавитьToolStripMenuItem1";
-            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.добавитьToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
             this.добавитьToolStripMenuItem1.Text = "Добавить";
             this.добавитьToolStripMenuItem1.Click += new System.EventHandler(this.добавитьToolStripMenuItem1_Click);
             // 
             // найтиToolStripMenuItem2
             // 
             this.найтиToolStripMenuItem2.Name = "найтиToolStripMenuItem2";
-            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.найтиToolStripMenuItem2.Size = new System.Drawing.Size(139, 22);
             this.найтиToolStripMenuItem2.Text = "Найти";
             this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
             // 
@@ -571,17 +578,10 @@ namespace KP_DEZHURSTVA
             this.button4.Location = new System.Drawing.Point(752, 53);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(241, 32);
-            this.button4.TabIndex = 35;
+            this.button4.TabIndex = 3;
             this.button4.Text = "Поменять местами";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // экспортПечатьToolStripMenuItem
-            // 
-            this.экспортПечатьToolStripMenuItem.Name = "экспортПечатьToolStripMenuItem";
-            this.экспортПечатьToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.экспортПечатьToolStripMenuItem.Text = "Экспорт / Печать";
-            this.экспортПечатьToolStripMenuItem.Click += new System.EventHandler(this.экспортПечатьToolStripMenuItem_Click);
             // 
             // ReportForm
             // 
@@ -598,9 +598,13 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.comboBox_month);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1350, 604);
+            this.MinimumSize = new System.Drawing.Size(1350, 604);
             this.Name = "ReportForm";
-            this.Text = "Отчёт";
+            this.Text = "Просмотр графика дежурств";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReportForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

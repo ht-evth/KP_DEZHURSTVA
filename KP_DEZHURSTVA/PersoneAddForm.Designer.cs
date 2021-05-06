@@ -188,7 +188,10 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.label_SerialNum);
             this.Controls.Add(this.label_LastName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(635, 332);
+            this.MinimumSize = new System.Drawing.Size(635, 332);
             this.Name = "PersoneAddForm";
             this.Text = "Справочник - Добавить сотрудника";
             this.ResumeLayout(false);

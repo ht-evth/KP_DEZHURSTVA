@@ -45,6 +45,8 @@ namespace KP_DEZHURSTVA
             this.ToolStripMenuItem_Workshop_Handbook = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.найтиToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Time = new System.Windows.Forms.Label();
             this.groupBox_Current = new System.Windows.Forms.GroupBox();
             this.button_Current = new System.Windows.Forms.Button();
@@ -52,8 +54,6 @@ namespace KP_DEZHURSTVA
             this.groupBox_Next = new System.Windows.Forms.GroupBox();
             this.button_Next = new System.Windows.Forms.Button();
             this.listBox_Next = new System.Windows.Forms.ListBox();
-            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкиДежурствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.groupBox_Current.SuspendLayout();
             this.groupBox_Next.SuspendLayout();
@@ -192,6 +192,21 @@ namespace KP_DEZHURSTVA
             this.найтиToolStripMenuItem2.Text = "Найти";
             this.найтиToolStripMenuItem2.Click += new System.EventHandler(this.найтиToolStripMenuItem2_Click);
             // 
+            // настройкиToolStripMenuItem
+            // 
+            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиДежурствToolStripMenuItem});
+            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.настройкиToolStripMenuItem.Text = "Настройки";
+            // 
+            // настройкиДежурствToolStripMenuItem
+            // 
+            this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
+            this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
+            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
+            // 
             // Time
             // 
             this.Time.Dock = System.Windows.Forms.DockStyle.Top;
@@ -211,7 +226,7 @@ namespace KP_DEZHURSTVA
             this.groupBox_Current.Name = "groupBox_Current";
             this.groupBox_Current.Padding = new System.Windows.Forms.Padding(10);
             this.groupBox_Current.Size = new System.Drawing.Size(502, 400);
-            this.groupBox_Current.TabIndex = 3;
+            this.groupBox_Current.TabIndex = 0;
             this.groupBox_Current.TabStop = false;
             this.groupBox_Current.Text = "Сейчас дежурят";
             // 
@@ -222,7 +237,7 @@ namespace KP_DEZHURSTVA
             this.button_Current.Location = new System.Drawing.Point(10, 359);
             this.button_Current.Name = "button_Current";
             this.button_Current.Size = new System.Drawing.Size(482, 31);
-            this.button_Current.TabIndex = 1;
+            this.button_Current.TabIndex = 2;
             this.button_Current.Text = "Информация о сотруднике";
             this.button_Current.UseVisualStyleBackColor = true;
             this.button_Current.Click += new System.EventHandler(this.button_Current_Click);
@@ -247,7 +262,7 @@ namespace KP_DEZHURSTVA
             this.listBox_Current.Location = new System.Drawing.Point(10, 32);
             this.listBox_Current.Name = "listBox_Current";
             this.listBox_Current.Size = new System.Drawing.Size(482, 304);
-            this.listBox_Current.TabIndex = 0;
+            this.listBox_Current.TabIndex = 1;
             this.listBox_Current.SelectedIndexChanged += new System.EventHandler(this.listBox_Current_SelectedIndexChanged);
             // 
             // groupBox_Next
@@ -258,7 +273,7 @@ namespace KP_DEZHURSTVA
             this.groupBox_Next.Name = "groupBox_Next";
             this.groupBox_Next.Padding = new System.Windows.Forms.Padding(10);
             this.groupBox_Next.Size = new System.Drawing.Size(502, 400);
-            this.groupBox_Next.TabIndex = 4;
+            this.groupBox_Next.TabIndex = 3;
             this.groupBox_Next.TabStop = false;
             this.groupBox_Next.Text = "Следующие на дежурство";
             // 
@@ -269,7 +284,7 @@ namespace KP_DEZHURSTVA
             this.button_Next.Location = new System.Drawing.Point(10, 359);
             this.button_Next.Name = "button_Next";
             this.button_Next.Size = new System.Drawing.Size(482, 31);
-            this.button_Next.TabIndex = 2;
+            this.button_Next.TabIndex = 5;
             this.button_Next.Text = "Информация о сотруднике";
             this.button_Next.UseVisualStyleBackColor = true;
             this.button_Next.Click += new System.EventHandler(this.button_Next_Click);
@@ -294,23 +309,8 @@ namespace KP_DEZHURSTVA
             this.listBox_Next.Location = new System.Drawing.Point(10, 32);
             this.listBox_Next.Name = "listBox_Next";
             this.listBox_Next.Size = new System.Drawing.Size(482, 304);
-            this.listBox_Next.TabIndex = 1;
+            this.listBox_Next.TabIndex = 4;
             this.listBox_Next.SelectedIndexChanged += new System.EventHandler(this.listBox_Next_SelectedIndexChanged);
-            // 
-            // настройкиToolStripMenuItem
-            // 
-            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиДежурствToolStripMenuItem});
-            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.настройкиToolStripMenuItem.Text = "Настройки";
-            // 
-            // настройкиДежурствToolStripMenuItem
-            // 
-            this.настройкиДежурствToolStripMenuItem.Name = "настройкиДежурствToolStripMenuItem";
-            this.настройкиДежурствToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.настройкиДежурствToolStripMenuItem.Text = "Настройки дежурств";
-            this.настройкиДежурствToolStripMenuItem.Click += new System.EventHandler(this.настройкиДежурствToolStripMenuItem_Click);
             // 
             // infoForm
             // 
@@ -323,8 +323,12 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1050, 500);
+            this.MinimumSize = new System.Drawing.Size(1050, 500);
             this.Name = "infoForm";
             this.Text = "График дежурств - Краткая информация";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.infoForm_FormClosed_1);
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

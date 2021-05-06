@@ -85,7 +85,7 @@ namespace KP_DEZHURSTVA
             this.listBox_Current.Location = new System.Drawing.Point(12, 60);
             this.listBox_Current.Name = "listBox_Current";
             this.listBox_Current.Size = new System.Drawing.Size(482, 304);
-            this.listBox_Current.TabIndex = 1;
+            this.listBox_Current.TabIndex = 0;
             // 
             // listBox1
             // 
@@ -136,7 +136,7 @@ namespace KP_DEZHURSTVA
             this.listBox1.Location = new System.Drawing.Point(551, 60);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(482, 304);
-            this.listBox1.TabIndex = 2;
+            this.listBox1.TabIndex = 1;
             // 
             // label1
             // 
@@ -153,7 +153,7 @@ namespace KP_DEZHURSTVA
             this.button1.Location = new System.Drawing.Point(533, 383);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(242, 32);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Поменять местами";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -163,7 +163,7 @@ namespace KP_DEZHURSTVA
             this.button2.Location = new System.Drawing.Point(791, 383);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(242, 32);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 2;
             this.button2.Text = "Отменить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -179,7 +179,10 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.listBox_Current);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1065, 466);
+            this.MinimumSize = new System.Drawing.Size(1065, 466);
             this.Name = "SwapForm";
             this.Text = "Поменять местами сотрудников";
             this.ResumeLayout(false);

@@ -29,5 +29,16 @@ namespace KP_DEZHURSTVA
         {
             printDialog1.ShowDialog();
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            bool value = this.radioButton2.Checked;
+
+            label_start_month.Visible = value;
+            label_end_month.Visible = value;
+            label_end_year.Visible = value;
+            comboBox_end_month.Visible = value;
+            comboBox_end_year.Visible = value;
+        }
     }
 }

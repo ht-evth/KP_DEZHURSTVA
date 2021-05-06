@@ -29,9 +29,9 @@ namespace KP_DEZHURSTVA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_NameEquipment = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@ namespace KP_DEZHURSTVA
             this.button4.Location = new System.Drawing.Point(261, 208);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 32);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 8;
             this.button4.Text = "Удалить";
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -76,7 +76,7 @@ namespace KP_DEZHURSTVA
             this.button3.Location = new System.Drawing.Point(10, 208);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(245, 32);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 7;
             this.button3.Text = "Перейти к празднику";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -84,6 +84,7 @@ namespace KP_DEZHURSTVA
             // dataGridView
             // 
             this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -92,18 +93,18 @@ namespace KP_DEZHURSTVA
             this.dataGridView.Location = new System.Drawing.Point(10, 246);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(3);
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView.RowTemplate.Height = 30;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(867, 261);
-            this.dataGridView.TabIndex = 4;
+            this.dataGridView.TabIndex = 9;
             this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
             // 
             // Column1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column1.FillWeight = 154.191F;
             this.Column1.HeaderText = "Наименование";
             this.Column1.Name = "Column1";
@@ -112,8 +113,8 @@ namespace KP_DEZHURSTVA
             // 
             // Column2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column2.FillWeight = 5.686562F;
             this.Column2.HeaderText = "Дата";
             this.Column2.Name = "Column2";
@@ -133,7 +134,7 @@ namespace KP_DEZHURSTVA
             this.button2.Location = new System.Drawing.Point(538, 130);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(295, 32);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Сбросить параметры поиска";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -142,7 +143,7 @@ namespace KP_DEZHURSTVA
             this.button1.Location = new System.Drawing.Point(538, 82);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(295, 32);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Найти";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -169,7 +170,7 @@ namespace KP_DEZHURSTVA
             this.groupBox1.Location = new System.Drawing.Point(10, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(867, 182);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры поиска";
             // 
@@ -179,7 +180,7 @@ namespace KP_DEZHURSTVA
             this.checkBox.Location = new System.Drawing.Point(538, 41);
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(292, 28);
-            this.checkBox.TabIndex = 32;
+            this.checkBox.TabIndex = 4;
             this.checkBox.Text = "Государственные праздники";
             this.checkBox.UseVisualStyleBackColor = true;
             // 
@@ -240,6 +241,9 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(905, 555);
+            this.MinimumSize = new System.Drawing.Size(905, 555);
             this.Name = "HolidayFindForm";
             this.Text = "Справочник - Праздники";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();

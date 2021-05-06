@@ -83,7 +83,7 @@ namespace KP_DEZHURSTVA
             this.textBox_InventoryNum.MaxLength = 99;
             this.textBox_InventoryNum.Name = "textBox_InventoryNum";
             this.textBox_InventoryNum.Size = new System.Drawing.Size(370, 29);
-            this.textBox_InventoryNum.TabIndex = 16;
+            this.textBox_InventoryNum.TabIndex = 2;
             this.textBox_InventoryNum.Text = " Митрофанович";
             // 
             // textBox_SerialNum
@@ -93,7 +93,7 @@ namespace KP_DEZHURSTVA
             this.textBox_SerialNum.MaxLength = 99;
             this.textBox_SerialNum.Name = "textBox_SerialNum";
             this.textBox_SerialNum.Size = new System.Drawing.Size(370, 29);
-            this.textBox_SerialNum.TabIndex = 15;
+            this.textBox_SerialNum.TabIndex = 1;
             this.textBox_SerialNum.Text = " Корней";
             // 
             // textBox_NameEquipment
@@ -103,7 +103,7 @@ namespace KP_DEZHURSTVA
             this.textBox_NameEquipment.MaxLength = 249;
             this.textBox_NameEquipment.Name = "textBox_NameEquipment";
             this.textBox_NameEquipment.Size = new System.Drawing.Size(370, 29);
-            this.textBox_NameEquipment.TabIndex = 14;
+            this.textBox_NameEquipment.TabIndex = 0;
             this.textBox_NameEquipment.Text = " Фадеев";
             // 
             // label_InventoryNum
@@ -140,7 +140,7 @@ namespace KP_DEZHURSTVA
             this.textBox1.MaxLength = 99;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(370, 29);
-            this.textBox1.TabIndex = 20;
+            this.textBox1.TabIndex = 4;
             this.textBox1.Text = " +7(913)549-21-79";
             // 
             // label1
@@ -159,7 +159,7 @@ namespace KP_DEZHURSTVA
             this.textBox2.MaxLength = 99;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(370, 29);
-            this.textBox2.TabIndex = 22;
+            this.textBox2.TabIndex = 3;
             this.textBox2.Text = " Группа - 4";
             // 
             // label2
@@ -216,7 +216,7 @@ namespace KP_DEZHURSTVA
             this.dataGridView1.RowTemplate.Height = 45;
             this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(722, 94);
-            this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.TabIndex = 5;
             // 
             // Column1
             // 
@@ -418,7 +418,7 @@ namespace KP_DEZHURSTVA
             this.button1.Location = new System.Drawing.Point(534, 386);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 32);
-            this.button1.TabIndex = 26;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Экспорт / Печать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -443,6 +443,9 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.label_LastName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(762, 469);
+            this.MinimumSize = new System.Drawing.Size(762, 469);
             this.Name = "aboutPersoneForm";
             this.Text = "Информация о сотруднике";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

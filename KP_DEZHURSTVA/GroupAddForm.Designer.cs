@@ -46,7 +46,7 @@ namespace KP_DEZHURSTVA
             this.textBox_NameEquipment.MaxLength = 249;
             this.textBox_NameEquipment.Name = "textBox_NameEquipment";
             this.textBox_NameEquipment.Size = new System.Drawing.Size(272, 29);
-            this.textBox_NameEquipment.TabIndex = 28;
+            this.textBox_NameEquipment.TabIndex = 0;
             // 
             // label_LastName
             // 
@@ -63,7 +63,7 @@ namespace KP_DEZHURSTVA
             this.button_Close.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_Close.Name = "button_Close";
             this.button_Close.Size = new System.Drawing.Size(180, 35);
-            this.button_Close.TabIndex = 32;
+            this.button_Close.TabIndex = 7;
             this.button_Close.Text = "Отмена";
             this.button_Close.UseVisualStyleBackColor = true;
             this.button_Close.Click += new System.EventHandler(this.button_Close_Click);
@@ -74,7 +74,7 @@ namespace KP_DEZHURSTVA
             this.button_AddAndClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_AddAndClose.Name = "button_AddAndClose";
             this.button_AddAndClose.Size = new System.Drawing.Size(215, 35);
-            this.button_AddAndClose.TabIndex = 31;
+            this.button_AddAndClose.TabIndex = 6;
             this.button_AddAndClose.Text = "Добавить и закрыть";
             this.button_AddAndClose.UseVisualStyleBackColor = true;
             this.button_AddAndClose.Click += new System.EventHandler(this.button_AddAndClose_Click);
@@ -85,7 +85,7 @@ namespace KP_DEZHURSTVA
             this.button_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(180, 35);
-            this.button_Add.TabIndex = 30;
+            this.button_Add.TabIndex = 5;
             this.button_Add.Text = "Добавить";
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
@@ -139,7 +139,7 @@ namespace KP_DEZHURSTVA
             this.listBox_all.Name = "listBox_all";
             this.listBox_all.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox_all.Size = new System.Drawing.Size(350, 268);
-            this.listBox_all.TabIndex = 33;
+            this.listBox_all.TabIndex = 1;
             // 
             // listBox_this
             // 
@@ -149,14 +149,14 @@ namespace KP_DEZHURSTVA
             this.listBox_this.Name = "listBox_this";
             this.listBox_this.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox_this.Size = new System.Drawing.Size(350, 268);
-            this.listBox_this.TabIndex = 34;
+            this.listBox_this.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(370, 163);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 39);
-            this.button1.TabIndex = 35;
+            this.button1.TabIndex = 2;
             this.button1.Text = ">>";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -166,7 +166,7 @@ namespace KP_DEZHURSTVA
             this.button2.Location = new System.Drawing.Point(370, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 39);
-            this.button2.TabIndex = 36;
+            this.button2.TabIndex = 4;
             this.button2.Text = "<<";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -186,7 +186,10 @@ namespace KP_DEZHURSTVA
             this.Controls.Add(this.textBox_NameEquipment);
             this.Controls.Add(this.label_LastName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(795, 468);
+            this.MinimumSize = new System.Drawing.Size(795, 468);
             this.Name = "GroupAddForm";
             this.Text = "Справочник - Добавить группу сотрудников";
             this.ResumeLayout(false);
